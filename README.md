@@ -1,8 +1,6 @@
-# 📚 Library Management System
+# Library Management System
 
-A console-based **Library Management System** built using **TypeScript**. This project demonstrates TypeScript fundamentals, object-oriented programming principles, generics, interfaces, enums, utility types, and clean project architecture without using a database.
-
----
+A console-based Library Management System built with TypeScript. The project demonstrates TypeScript fundamentals, object-oriented programming, generics, interfaces, enums, utility types, and a clean in-memory architecture without using a database.
 
 ## Features
 
@@ -24,84 +22,58 @@ A console-based **Library Management System** built using **TypeScript**. This p
 - Prevent borrowing unavailable books
 - Maintain borrowing history
 
----
-
 ## Technologies Used
 
 - TypeScript
 - Node.js
 - ESLint
 
----
-
 ## Project Structure
 
+```text
+Test2/
+|-- src/
+|   |-- enums/
+|   |-- interfaces/
+|   |-- models/
+|   |-- repositories/
+|   |-- services/
+|   |-- types/
+|   `-- index.ts
+|-- dist/
+|-- package.json
+|-- package-lock.json
+|-- tsconfig.json
+|-- eslint.config.mjs
+`-- README.md
 ```
-library-management/
-│
-├── src/
-│   ├── enums/
-│   ├── interfaces/
-│   ├── models/
-│   ├── repositories/
-│   ├── services/
-│   └── index.ts
-│
-├── dist/
-├── package.json
-├── tsconfig.json
-├── eslint.config.mjs
-└── README.md
-```
-
----
 
 ## TypeScript Concepts Covered
 
-- Primitive Types
+- Primitive types
+- Type aliases
 - Interfaces
-- Type Aliases
 - Enums
-- Classes
-- Constructors
-- Access Modifiers
-- Generic Classes
-- Generic Interfaces
-- Generic Constraints
-- Utility Types
-  - Partial
-  - Omit
-- Readonly Properties
-- Optional Properties
-- Type Inference
-- Strong Typing
-- Object-Oriented Programming
-- Repository Pattern
-- Error Handling
-
----
+- Classes and constructors
+- Access modifiers
+- Generic classes
+- Generic interfaces
+- Generic constraints
+- Utility types such as `Partial` and `Omit`
+- Readonly and optional properties
+- Type inference
+- Strong typing
+- Object-oriented programming
+- Repository pattern
+- Error handling
 
 ## Installation
 
-Clone the repository
-
-```bash
-git clone <repository-url>
-```
-
-Move to the project directory
-
-```bash
-cd library-management
-```
-
-Install dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
-
----
 
 ## Build the Project
 
@@ -109,76 +81,64 @@ npm install
 npm run build
 ```
 
----
-
 ## Run the Project
+
+Compile and run in one command:
 
 ```bash
 npm run dev
 ```
 
-or
+Or run the compiled JavaScript after building:
 
 ```bash
 npm start
 ```
 
----
-
 ## Lint the Project
 
-Check for lint issues
+Check for lint issues:
 
 ```bash
 npm run lint
 ```
 
-Automatically fix lint issues
+Automatically fix lint issues:
 
 ```bash
 npm run lint:fix
 ```
 
----
-
 ## Data Storage
 
-This project does **not** use a database.
-
-All data is stored in memory using a generic repository and arrays during application execution.
-
----
+This project does not use a database. All data is stored in memory using a generic repository and arrays during application execution.
 
 ## Project Architecture
 
-```
+```text
 index.ts
-      │
-      ▼
- Services
-      │
-      ▼
- Generic Repository
-      │
-      ▼
- In-Memory Arrays
+   |
+   v
+Services
+   |
+   v
+Generic Repository
+   |
+   v
+In-Memory Arrays
 ```
-
----
 
 ## Sample Functionalities
 
-- Add Books
-- Register Members
-- Borrow Books
-- Return Books
-- View Borrow History
-- Update Book Details
-- Delete Books
-- Search Books by ID
-- Search Members by ID
-
----
+- Add books
+- Register members
+- Borrow books
+- Return books
+- View borrow history
+- Update book details
+- Delete books
+- Search books by ID
+- Search members by ID
 
 ## Author
 
